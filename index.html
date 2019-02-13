@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Musical Reference Tool</title>
+	<link rel="stylesheet" type="text/css" href='./index.css'>
+</head>
+<body>
+	<div id="whitekeys">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div id="blackkeys">
+		<div></div>
+		<div></div>
+		<div class="hide"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<div id="scale_notes">
+		<table>
+			<td>
+				<tr>first</tr>
+				<tr>second</tr>
+				<tr>third</tr>
+			</td>
+		</table>
+	</div>
+
+	<div id="controls">
+		<select id="keysig">
+			<option value="0">C</option>
+			<option value="1">C#</option>
+			<option value="2">D</option>
+			<option value="3">D#</option>
+			<option value="4">E</option>
+			<option value="5">F</option>
+			<option value="6">F#</option>
+			<option value="7">G</option>
+			<option value="8">G#</option>
+			<option value="9">A</option>
+			<option value="10">A#</option>
+			<option value="11">B</option>
+		</select>
+
+
+		<select id="scale">
+			<option value="1">Major</option>
+			<option value='2'>Natural Minor</option>
+			<option value="3">Harmonic Minor</option>
+			<option value="4">Melodic Minor</option>
+		</select>
+		<button onclick="blueNote()">Generate scale</button>
+		<button onclick="makeKeys()">Clear keys</button>
+	</div>
+
+
+<script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>
