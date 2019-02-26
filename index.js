@@ -97,12 +97,12 @@ var keys = [];
 		    	var sc_id = document.getElementById('scale').value;
 		    	var intervalArray = ['nothing',major,naturalMinor,harmonicMinor,melodicMinor];
 		    	var scale = intervals(notes[key],intervalArray[sc_id]);
-		    	var seventhChord = minor7thChord(scale[0]);
+		    	//var seventhChord = minor7thChord(scale[0]);
 		    	for(var m = 0; m < 7; m++){
 		    		makeBlue(elemForNote(scale[m]));		    		
 		    	}
 		    	makeRed(elemForNote(scale[2]));
 		    	makeGreen(elemForNote(scale[6]));
-		    	console.log(seventhChord);	
+		    	//console.log(seventhChord);	
 	    }
 		    	
