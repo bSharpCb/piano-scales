@@ -23,6 +23,9 @@ var keys = [];
 		function makeGreen(elem) {
 			elem.style = "background: green;";
 		}
+		function makePurple(elem) {
+			elem.style = "background: purple;";
+		}
 
 
 		//scale intervals
@@ -103,6 +106,7 @@ var keys = [];
 		    	}
 		    	makeRed(elemForNote(scale[2]));
 		    	makeGreen(elemForNote(scale[6]));
+		    	makePurple(elemForNote(scale[4]));
 		    	//console.log(seventhChord);	
 	    }
 		    	
