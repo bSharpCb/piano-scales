@@ -1,3 +1,6 @@
+//optimization and new features wishlist 
+//combine makeColor functions into a single function that receives (element, color)
+
 var keys = [];
 		keys[0] = Array.from(document.getElementById('whitekeys').children);
 		keys[1] = Array.from(document.getElementById('blackkeys').children);
@@ -13,23 +16,10 @@ var keys = [];
 		function reset(elem) {
 				elem.style = "";
 		}
-
-		function makeBlue(elem) {
-			elem.style = "background: blue;";
+		
+		function makeColor(elem,colorString) {
+			elem.style = "background:" + colorString + ";";
 		}
-		function makeRed(elem) {
-			elem.style = "background: red;";
-		}
-		function makeGreen(elem) {
-			elem.style = "background: green;";
-		}
-		function makePurple(elem) {
-			elem.style = "background: purple;";
-		}
-		function addBorder(elem) {
-			elem.setAttribute("style", "border: 5px solid blue;");
-		}
-
 		
 
 
@@ -108,11 +98,11 @@ var keys = [];
 		    	var scale = intervals(notes[key],intervalArray[sc_id]);
 		    	//var seventhChord = minor7thChord(scale[0]);
 		    	for(var m = 0; m < 7; m++){
-		    		makeBlue(elemForNote(scale[m]));	    		
+		    		makeColor(elemForNote(scale[m]),"blue");	    		
 		    	}
-		    	makeRed(elemForNote(scale[2]));
-		    	makeGreen(elemForNote(scale[6]));
-		    	makePurple(elemForNote(scale[4]));
+		    	makeColor(elemForNote(scale[2]),"red");
+		    	makeColor(elemForNote(scale[6]),"green");
+		    	makeColor(elemForNote(scale[4]),"purple");
 		    	//console.log(seventhChord);	
 	    }
 		    	
