@@ -103,6 +103,6 @@ var keys = [];
 		    	makeColor(elemForNote(scale[2]),"red");
 		    	makeColor(elemForNote(scale[6]),"green");
 		    	makeColor(elemForNote(scale[4]),"purple");
-		    	//console.log(seventhChord);	
+		    	console.log(scale[2]);
 	    }
 		    	
