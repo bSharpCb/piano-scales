@@ -101,10 +101,11 @@ var keys = [];
 		    	var sc_id = document.getElementById('scale').value;
 		    	var intervalArray = ['nothing',major,naturalMinor,harmonicMinor,melodicMinor,phrygianDominant, modeDorian, modePhyrigian, modeLydian, modeMixolydian, modeLocrian];
 		    	var scale = intervals(notes[key],intervalArray[sc_id]);
-		    	var rootN = document.getElementById('rootN').value;
 		    	for(var m = 0; m < 7; m++){
 		    		makeColor(elemForNote(scale[m]),"blue");	    		
 		    	}
+		    	var rootN = document.getElementById('rootN');
+		    	rootN.value = key;
 		    	makeColor(elemForNote(scale[2]),"red");
 		    	makeColor(elemForNote(scale[6]),"green");
 		    	makeColor(elemForNote(scale[4]),"purple");
