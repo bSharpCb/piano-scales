@@ -30,6 +30,11 @@ var keys = [];
 		harmonicMinor = [2,1,2,2,1,3];
 		melodicMinor = [2,1,2,2,2,2];
 		phrygianDominant = [1,3,1,2,1,2];
+		modeDorian = [2,1,2,2,2,1];
+		modePhyrigian = [1,2,2,2,1,2];
+		modeLydian = [2,2,2,1,2,2];
+		modeMixolydian = [2,2,1,2,2,1];
+		modeLocrian = [1,2,2,1,2,2];
 
 			function octaveAdjust(n){
 			if(n>11){
@@ -94,15 +99,15 @@ var keys = [];
 		    	makeKeys();
 		    	var key = document.getElementById('keysig').value;
 		    	var sc_id = document.getElementById('scale').value;
-		    	var intervalArray = ['nothing',major,naturalMinor,harmonicMinor,melodicMinor,phrygianDominant];
+		    	var intervalArray = ['nothing',major,naturalMinor,harmonicMinor,melodicMinor,phrygianDominant, modeDorian, modePhyrigian, modeLydian, modeMixolydian, modeLocrian];
 		    	var scale = intervals(notes[key],intervalArray[sc_id]);
-		    	//var seventhChord = minor7thChord(scale[0]);
+		    	var rootN = document.getElementById('rootN').value;
 		    	for(var m = 0; m < 7; m++){
 		    		makeColor(elemForNote(scale[m]),"blue");	    		
 		    	}
 		    	makeColor(elemForNote(scale[2]),"red");
 		    	makeColor(elemForNote(scale[6]),"green");
 		    	makeColor(elemForNote(scale[4]),"purple");
-		    	console.log(scale[2]);
+		    	;
 	    }
 		    	
