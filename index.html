@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Musical Reference Tool</title>
+	<title>Diatonic Scales by Key</title>
 	<link rel="stylesheet" type="text/css" href='./index.css'>
 </head>
 <body>
@@ -55,18 +55,28 @@
 		<button onclick="makeKeys()">Clear keys</button>
 	</div>
 
-<table id="t01" style="width: 50px; border-collapse: collapse;">
-<tbody>
-<tr>
-	<td style="font-weight: bold"> Root Note <input type="text" id="rootN" class="infobox" value=""></td>
-<tr>
-	<td style="font-weight: bold"> Third Note <input type="text" id="thirdN" class="infobox" value=""></td>
-<tr>
-	<td style="font-weight: bold"> Fifth Note <input type="text" id="fifthN" class="infobox" value=""></td>
-<tr>
-	<td style="font-weight: bold"> Seventh Note <input type="text" id="seventhN" class="infobox" value=""></td>
-
-
+<table id="scale_notes">
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note0" class="infobox" value="">I</td>
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note1" class="infobox" value="">II</td>
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note2" class="infobox" value="">III</td>
+	
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note3" class="infobox" value="">IV</td>
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note4" class="infobox" value="">V</td>
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note5" class="infobox" value="">VI</td>
+	<tr>
+		<td style="font-weight: bold"><input type="text" id="note6" class="infobox" value="">VII</td>
+</table>
+<div id='footerNotes'>
+<p>Third highlighted in <b>red</b></p>
+<p>Fifth highlighted in <b>purple</b></p>
+<p>Seventh highlighted in <b>green</b></p>
+</div>
 <script type="text/javascript" src="./index.js"></script>
 
 </body>

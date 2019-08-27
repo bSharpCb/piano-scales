@@ -1,55 +1,67 @@
-		#whitekeys {
-			display: inline-block;
-			width: 400px;
-			height: 200px;
-		}
+#whitekeys {
+	display: inline-block;
+	width: 400px;
+	height: 200px;
+}
 
-		#whitekeys div {
-			display: inline-block;
-			width: 48px;
-			height: 100%;
-			background: white;
-			border-color: grey;
-			border-width: 1px;
-			border-style: solid;
-			margin: 0px;
-			padding: 0px;
-		}
+#whitekeys div {
+	display: inline-block;
+	width: 48px;
+	height: 100%;
+	background: white;
+	border-color: grey;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0px;
+	padding: 0px;
+}
 
-		#blackkeys {
-			display: inline-block;
-			position: absolute;
-			width: 400px;
-			height: 200px;
-			top: 0px;
-			left: 35px;
-		}
+#blackkeys {
+	display: inline-block;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 0px;
+	left: 35px;
+}
 
-		#blackkeys div {
-			display: inline-block;
-			width: 30px;
-			height: 50%;
-			margin-left: 10px;
-			margin-right: 10px;
-			background: black;
-			border-color: black;
-			border-width: 1px;
-			border-style: solid;
-		}
+#blackkeys div {
+	display: inline-block;
+	width: 30px;
+	height: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: black;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
 
-		#blackkeys .hide {
-			visibility: hidden;
-		}
+#blackkeys .hide {
+	visibility: hidden;
+}
 
-		#controls {
-			margin: 10px;
-		}
+#controls {
+	margin: 10px;
+}
 
-		#scale_notes {
-			display: inline;
-			position: absolute;
-			top: 50px;
-			left: 400px;
-		}
+#footerNotes{
+	float: left;
+	font-size:20px;
+	font-family:Euphemia;
+	color:black;
+ }
 
+#scale_notes {
+	width: 150px;
+	height: 175px;
+	margin: 10px;
+	float: left;
+}
+
+
+
+#scale_notes input{
+	width: 80px;
+}
 
